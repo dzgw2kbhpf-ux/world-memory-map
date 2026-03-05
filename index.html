@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>World Memory Map PRO</title>
+
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🌍 World Memory Map PRO</h1>
+
+<div class="modeButtons">
+
+<button id="worldMode">🌎 World</button>
+<button id="japanMode">🇯🇵 Japan</button>
+
+</div>
+
+</header>
+
+<section class="stats">
+
+<div class="stat">
+訪れた場所
+<span id="placeCount">0</span>
+</div>
+
+<div class="stat">
+人生達成率
+<span id="lifePercent">0%</span>
+</div>
+
+<div class="progress">
+
+<div id="progressBar"></div>
+
+</div>
+
+</section>
+
+<section class="inputPanel">
+
+<input id="placeName" placeholder="場所名">
+
+<input id="lat" placeholder="緯度">
+
+<input id="lng" placeholder="経度">
+
+<textarea id="memo" placeholder="思い出"></textarea>
+
+<input type="file" id="photo">
+
+<button id="addBtn">追加</button>
+
+<button id="shareBtn">共有URL生成</button>
+
+</section>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
